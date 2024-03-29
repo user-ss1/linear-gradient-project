@@ -17,7 +17,7 @@ const hexavalues=()=>{
 // Function to set gradient direction based on the clicked paragraph
 const setGradientDirection = (direction) => {
     document.body.style.backgroundImage = `linear-gradient(to ${direction}, ${rgb1}, ${rgb2})`;
-    p.innerHTML = `background-image: linear-gradient(to ${direction}, ${rgb1}, ${rgb2})`;
+    p.innerHTML = `background-image: linear-gradient(to ${direction}, ${rgb1}, ${rgb2});`;
 }
 
 
@@ -25,7 +25,7 @@ const hbtn1=()=>{
      rgb1=hexavalues();
     console.log(rgb1);
     document.body.style.backgroundImage=`linear-gradient(to top right,${rgb1},${rgb2})`;
-    p.innerHTML=`background-image: linear-gradient(to top right,${rgb1}, ${rgb2})`;
+    p.innerHTML=`background-image: linear-gradient(to top right,${rgb1}, ${rgb2});`;
     btn1.innerText=rgb1;
 }
 
@@ -35,7 +35,7 @@ const hbtn2=()=>{
     console.log(rgb2);
     
     document.body.style.backgroundImage=`linear-gradient(to top right, ${rgb1},${rgb2})`;
-    p.innerHTML=`background-image: linear-gradient(to top right,${rgb1},${rgb2})`;
+    p.innerHTML=`background-image: linear-gradient(to top right,${rgb1},${rgb2});`;
     btn2.innerText=rgb2;
 }
 // copydiv.addEventListener('click',()=>{
